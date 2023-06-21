@@ -1,8 +1,8 @@
 {
-    "name": "MOTOR DRIVER",
+    "name": "4CH MOTORS",
     "description": "Mục mở rộng của Yolo:Bit dùng cho module Motor driver",
     "libs": [
-        "i2c_motor_driver.py"
+        "i2c_motors_driver.py"
     ],
     "blocks": [
         "definition.js"

@@ -183,7 +183,7 @@ Blockly.Blocks['i2c_stepper_motor_driver'] = {
       this.jsonInit(
         {
             "type": "i2c_dc_motor_driver",
-            "message0": "động cơ bước cổng %1 quay %3 tốc độ %2 (0 đến 250)",
+            "message0": "động cơ bước %1 quay %3 tốc độ %2 (0 đến 250)",
             "args0": [
               {
                 "type": "field_dropdown",
@@ -250,7 +250,7 @@ Blockly.Blocks['i2c_stepper_move_step'] = {
     this.jsonInit(
       {
           "type": "i2c_stepper_move_step",
-          "message0": "động cơ bước cổng %1 quay %3 %2 bước",
+          "message0": "động cơ bước %1 quay %3 %2 bước",
           "args0": [
             {
               "type": "field_dropdown",
@@ -315,7 +315,7 @@ Blockly.Blocks['i2c_stepper_release'] = {
     this.jsonInit(
       {
           "type": "i2c_stepper_move_step",
-          "message0": "dừng di chuyển động cơ bước cổng %1 ",
+          "message0": "dừng động cơ bước %1 ",
           "args0": [
             {
               "type": "field_dropdown",
@@ -346,7 +346,7 @@ Blockly.Blocks['i2c_stepper_release'] = {
       Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
       Blockly.Python.definitions_['import_machine'] = 'import machine';
       Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import StepperMotor';
-      Blockly.Python.definitions_['create_motor_driver'] = 'driver = driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+      Blockly.Python.definitions_['create_motor_driver'] = 'driver = StepperMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
       var dropdown_motor = block.getFieldValue('stepper');
       var dropdown_dir = block.getFieldValue('dir');
       var step = Blockly.Python.valueToCode(block, 'step', Blockly.Python.ORDER_ATOMIC);
