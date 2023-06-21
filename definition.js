@@ -167,8 +167,8 @@ Blockly.Blocks['i2c_dc_move_motor'] = {
 Blockly.Python["i2c_dc_move_motor"] = function (block) {
   Blockly.Python.definitions_['import_display'] = 'from yolobit import *';
   Blockly.Python.definitions_['import_machine'] = 'import machine';
-  Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motor_driver import MotorDriver4Channel';
-  Blockly.Python.definitions_['create_motor_driver'] = 'driver = MotorDriver4Channel(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
+  Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
+  Blockly.Python.definitions_['create_motor_driver'] = 'driver = DCMotor(machine.SoftI2C(scl=machine.Pin(22), sda=machine.Pin(21), freq=100000))\n';
   var motor1 = Blockly.Python.valueToCode(block, 'motor1', Blockly.Python.ORDER_ATOMIC);
   var motor2 = Blockly.Python.valueToCode(block, 'motor2', Blockly.Python.ORDER_ATOMIC);
   var motor3 = Blockly.Python.valueToCode(block, 'motor3', Blockly.Python.ORDER_ATOMIC);
