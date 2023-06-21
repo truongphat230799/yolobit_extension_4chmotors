@@ -11,19 +11,19 @@ Blockly.Blocks['i2c_dc_motor_driver'] = {
                 "options": [
                   [
                     "M1",
-                    "MD4C_REG_CH1"
+                    "0"
                   ],
                   [
                     "M2",
-                    "MD4C_REG_CH2"
+                    "1"
                   ],
                   [
                     "M3",
-                    "MD4C_REG_CH3"
+                    "2"
                   ],
                   [
                     "M4",
-                    "MD4C_REG_CH4"
+                    "3"
                   ]
                 ]
               },
@@ -191,11 +191,11 @@ Blockly.Blocks['i2c_stepper_motor_driver'] = {
                 "options": [
                   [
                     "M1",
-                    "MD4C_REG_CH1"
+                    "0"
                   ],
                   [
                     "M2",
-                    "MD4C_REG_CH2"
+                    "1"
                   ]
                 ]
               },
@@ -258,11 +258,11 @@ Blockly.Blocks['i2c_stepper_move_step'] = {
               "options": [
                 [
                   "M1",
-                  "MD4C_REG_CH1"
+                  "0"
                 ],
                 [
                   "M2",
-                  "MD4C_REG_CH2"
+                  "1"
                 ]
               ]
             },
@@ -323,11 +323,11 @@ Blockly.Blocks['i2c_stepper_release'] = {
               "options": [
                 [
                   "M1",
-                  "MD4C_REG_CH1"
+                  "0"
                 ],
                 [
                   "M2",
-                  "MD4C_REG_CH2"
+                  "1"
                 ]
               ]
             }
