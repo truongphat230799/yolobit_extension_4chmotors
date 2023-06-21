@@ -112,7 +112,7 @@ Blockly.Blocks['i2c_dc_motor_delay'] = {
   }
 };
 
-Blockly.Python["i2c_motor_delay"] = function (block) {
+Blockly.Python["i2c_dc_motor_delay"] = function (block) {
     Blockly.Python.definitions_['import_yolobit'] = 'from yolobit import *';
     Blockly.Python.definitions_['import_machine'] = 'import machine';
     Blockly.Python.definitions_['import_motor_driver'] = 'from i2c_motors_driver import DCMotor';
@@ -174,7 +174,7 @@ Blockly.Python["i2c_dc_move_motor"] = function (block) {
   var motor3 = Blockly.Python.valueToCode(block, 'motor3', Blockly.Python.ORDER_ATOMIC);
   var motor4 = Blockly.Python.valueToCode(block, 'motor4', Blockly.Python.ORDER_ATOMIC);
   // TODO: Assemble Python into code variable.
-  var code = 'driver.setSpeed(MD4C_REG_CH1,'+ motor1+')\n' + 'driver.setSpeed(MD4C_REG_CH2,'+ motor2+')\n'+ 'driver.setSpeed(MD4C_REG_CH3,'+ motor3+')\n'+ 'driver.setSpeed(MD4C_REG_CH4,'+ motor4+')\n';
+  var code = 'driver.setSpeed(0,'+ motor1+')\n' + 'driver.setSpeed(1,'+ motor2+')\n'+ 'driver.setSpeed(2,'+ motor3+')\n'+ 'driver.setSpeed(3,'+ motor4+')\n';
   return code;
 };
 
