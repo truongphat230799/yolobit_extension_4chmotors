@@ -1,5 +1,5 @@
 <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-  <category name="4CH MOTOR" colour="#cb2026" icon="engineering">
+  <category name="MOTORS DRIVER" colour="#cb2026" icon="Engineering">
     <block type="i2c_dc_motor_driver">
         <value name="speed">
             <shadow type="math_number">
